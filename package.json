@@ -1,0 +1,35 @@
+{
+	"name": "grunt-spritemaker",
+	"version": "0.0.1",
+	"description": "custom sprite creator",
+	"repository": "https://github.com/donopr/grunt-spritemaker",
+	"main": "tasks/spritemaker.js",
+	"author": {
+		"name": "Dmitry Onoprienko",
+		"email": "donopr@gmail.com",
+		"url": ""
+	},
+	"keywords": [
+		"gruntplugin"
+	],
+	"main": "Gruntfile.js",
+	"engines": {
+		"node": ">= 0.8.0"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"grunt-contrib-clean": "~0.5.0",
+		"grunt-contrib-jshint": "~0.8.0",
+		"grunt-contrib-nodeunit": "~0.3.0",
+		"grunt": "~0.4.2",
+		"jshint-stylish": "~0.1.5",
+		"load-grunt-tasks": "~0.3.0"
+	},
+	"scripts": {
+		"test": "grunt test"
+	},
+	"dependencies": {
+		"canvas": "1.1.6",
+		"lodash": "^3.1.0"
+	}
+}

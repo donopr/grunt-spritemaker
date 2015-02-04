@@ -38,16 +38,19 @@ module.exports = function (grunt) {
 			sprites: {
 				redRect16x16: {
 					processor: function (ctx, clientWidth, clientHeight) {
-						ctx.fillStyle = '#ff0000';
+						ctx.fillStyle = 'red';
 						ctx.fillRect(0, 0, clientWidth, clientHeight);
 					}
 				},
 				blueRect24x16: {
 					width: 24,
 					processor: function (ctx, clientWidth, clientHeight) {
-						ctx.fillStyle = '#0000ff';
+						ctx.fillStyle = 'blue';
 						ctx.fillRect(0, 0, clientWidth, clientHeight);
 					}
+				},
+				redCircle16: {
+					processor: 'test/redCircle16'
 				}
 			}
 		}

@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 
 			if (_.isString(sprite.processor)) {
 				try {
-					sprite.processor = require(path.join(__dirname, sprite.processor));
+					sprite.processor = require(path.resolve(sprite.processor));
 				} catch (e) {
 				}
 			}

@@ -42,7 +42,7 @@ module.exports = function (grunt) {
 					ctx = canvas.getContext('2d');
 
 				ctx.clearRect(0, 0, w, h);
-				sprite.processor.call(_.extend(options.context, sprite.context || {}), ctx, w, h);
+				sprite.processor.call(_.merge({}, options.context, sprite.context || {}), ctx, w, h);
 
 				if (path.extname(spritePath).length < 2) {
 					spritePath += '.png';

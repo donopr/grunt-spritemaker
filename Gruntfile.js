@@ -32,7 +32,8 @@ module.exports = function (grunt) {
 			options: {
 				outputDir: 'tmp',
 				width: 16,
-				height: 16
+				height: 16,
+				postfix: 'gen'
 			},
 
 			sprites: {

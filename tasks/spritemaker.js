@@ -10,6 +10,7 @@ module.exports = function (grunt) {
 		var options = this.options({
 			outputDir: 'assets/images',
 			context: {},
+			postfix: '',
 			width: 0,
 			height: 0
 		});
@@ -45,6 +46,9 @@ module.exports = function (grunt) {
 				sprite.processor.call(_.merge({}, options.context, sprite.context || {}), ctx, w, h);
 
 				if (path.extname(spritePath).length < 2) {
+					if (!_.isEmpty(options.postfix)) {
+						spritePath += options.postfix[0] === '.'? options.postfix: '.' + options.postfix;
+					}
 					spritePath += '.png';
 				}
 
